@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    background-image:url(royal_enfield.jpg) ;
+    /* background-size: contain; */
+    background-size: cover;
+    
+}
+
+header {
+    background-color: black;
+    color: white;
+    background-size: cover;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+}
+
+ .showcase { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+} 
+
+.bike {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 220px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bike:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.bike img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.testimonial {
+    background-color: #e9ecef;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.testimonial h2 {
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .bike {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+.showcase {
+    display: flex;
+    flex-wrap: wrap;  /* Allow items to wrap */
+    justify-content: center;  /* Center items */
+    gap: 1rem;  /* Add space between items */
+    margin-bottom: 2rem;
+}
+
